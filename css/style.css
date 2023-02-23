@@ -1,6 +1,6 @@
 :root {
-  --primary-color: #f46e62;
-  --secondary-color: #f46e6250;
+  --primary-color: #f56d61;
+  --secondary-color: white;
   --box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -11,6 +11,7 @@ body {
 
 h1,
 h2,
+h3,
 p {
   font-family: "Roboto", sans-serif;
 }
@@ -28,13 +29,19 @@ h2 {
   font-size: 36px;
 }
 
+h3 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
 p {
   font-weight: 300;
   font-size: 18px;
 }
 
 .navbar-custom {
-  background: var(--primary-color);
+  background: var(--secondary-color);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .navbar-custom a {
@@ -51,11 +58,11 @@ p {
 }
 
 .navbar-custom .navbar-toggler {
-  border-width: 1px;
-  border-color: rgba(255, 255, 255, 0.75);
+  border-width: 0;
 }
 
 .about-me,
+.webdev-projects,
 .contact-info {
   margin-top: 100px;
 }
@@ -66,7 +73,9 @@ p {
 
 .photo {
   max-width: 100%;
+  border-radius: 0px;
 }
+
 .button {
   background: var(--primary-color);
   color: white;
@@ -86,6 +95,22 @@ p {
   border-color: var(--primary-color);
 }
 
+.image {
+  max-width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+}
+
+.image {
+  transition: all 150ms ease-in-out;
+}
+
+.image:hover {
+  transform: scale(1.2);
+}
+
 .fa-brands {
   color: var(--primary-color);
   font-size: 36px;
@@ -93,9 +118,4 @@ p {
 
 .fa-brands:hover {
   cursor: pointer;
-}
-
-.footer {
-  background: var(--secondary-color);
-  padding: 10px;
 }
