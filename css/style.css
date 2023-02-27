@@ -109,6 +109,10 @@ p {
   object-fit: cover;
 }
 
+.fa-solid {
+  color: var(--primary-color);
+}
+
 .fa-brands {
   color: var(--primary-color);
   font-size: 36px;
@@ -116,5 +120,4 @@ p {
 
 .fa-brands:hover {
   cursor: pointer;
-  text-decoration: none;
 }
