@@ -1,7 +1,7 @@
 :root {
-  --primary-color: #f56d61;
+  --primary-color: rgb(245, 109, 97);
   --secondary-color: white;
-  --box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 body {
@@ -12,6 +12,7 @@ body {
 h1,
 h2,
 h3,
+h5,
 p {
   font-family: "Roboto", sans-serif;
 }
@@ -46,7 +47,7 @@ p {
 
 .navbar-custom {
   background: var(--secondary-color);
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--box-shadow);
 }
 
 .navbar-custom a {
@@ -102,6 +103,10 @@ p {
 
 .card {
   box-shadow: var(--box-shadow);
+}
+
+.card:hover {
+  box-shadow: rgba(245, 109, 97, 0.24) 0px 3px 8px;
 }
 
 .image {
