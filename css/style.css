@@ -54,6 +54,10 @@ footer {
   bottom: 0;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 .navbar-custom {
   background: var(--secondary-color);
   box-shadow: var(--box-shadow);
