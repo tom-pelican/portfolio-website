@@ -1,6 +1,6 @@
 :root {
   --primary-color: rgb(245, 109, 97);
-  --secondary-color: white;
+  --secondary-color: rgba(245, 109, 97, 0.2);
   --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
@@ -44,6 +44,7 @@ h3 {
 p {
   font-weight: 300;
   font-size: 18px;
+  margin: 0;
 }
 
 footer {
@@ -59,7 +60,7 @@ a:hover {
 }
 
 .navbar-custom {
-  background: var(--secondary-color);
+  background: white;
   box-shadow: var(--box-shadow);
 }
 
@@ -116,6 +117,18 @@ a:hover {
   border-width: 2px;
   border-color: var(--primary-color);
 }
+
+.timeline {
+  margin-top: 60px;
+  padding: 15px;
+}
+
+.timeline-text {
+  background: var(--secondary-color);
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+}
+
 .link {
   color: black;
   text-decoration: underline;
@@ -138,10 +151,6 @@ a:hover {
   object-fit: cover;
 }
 
-.fa-solid {
-  color: var(--primary-color);
-}
-
 .fa-brands {
   color: var(--primary-color);
   font-size: 36px;
@@ -149,4 +158,8 @@ a:hover {
 
 .fa-brands:hover {
   cursor: pointer;
+}
+
+.fa-circle {
+  color: var(--primary-color);
 }
