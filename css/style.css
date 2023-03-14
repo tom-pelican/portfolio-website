@@ -1,12 +1,21 @@
 :root {
   --primary-color: rgb(245, 109, 97);
-  --secondary-color: rgba(245, 109, 97, 0.5);
+  --secondary-color: rgb(43, 43, 43);
   --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 body {
   margin: 0 auto;
   max-width: 100%;
+}
+
+header {
+  padding: 200px;
+  text-align: center;
+  background-image: url(/images/tom-kaan.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
 }
 
 h1,
@@ -19,7 +28,7 @@ footer {
 }
 
 h1 {
-  font-weight: 700;
+  font-weight: 400;
   font-weight: bold;
   font-size: 64px;
   letter-spacing: -2px;
@@ -27,18 +36,19 @@ h1 {
 }
 
 h2 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+h2 span.topic {
   font-weight: 300;
-  font-size: 36px;
+  text-transform: uppercase;
+  border-bottom: 3px solid var(--primary-color);
 }
 
 h3 {
-  font-weight: 400;
-  font-size: 24px;
-  background: var(--primary-color);
-  color: white;
-  padding: 10px;
-  margin: 0 auto;
-  width: 100%;
+  font-weight: 300;
+  font-size: 18px;
 }
 
 p {
@@ -81,17 +91,29 @@ a:hover {
   border-width: 0;
 }
 
-.container {
-  margin-top: 100px;
-}
-
 .primary-coloured-text {
   color: var(--primary-color);
 }
 
 .photo-about-me {
-  max-width: 100%;
-  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+  max-width: 50%;
+  clip-path: circle(50%);
+}
+
+.about-me,
+.work,
+.education,
+.skills {
+  padding: 50px 0;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
+}
+
+.skill {
+  margin: 10px;
+}
+
+.progress-bar {
+  background: var(--primary-color);
 }
 
 .photo-contact {
