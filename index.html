@@ -69,9 +69,8 @@
     </nav>
 
     <!--Welcome text-->
-
     <header id="home">
-      <div class="container">
+      <div class="container home">
         <h1>Hi, I am Tom van Lint</h1>
         <p>
           I'm a creative developer based in Rotterdam (NL). I have a background
@@ -84,17 +83,18 @@
       </div>
     </header>
 
+    <!--About me section-->
     <section id="about">
-      <div class="container about-me">
+      <div class="container about-me text-center text-md-left">
         <div class="row">
-          <div class="col-4">
+          <div class="col-md-4">
             <img
               src="/images/tom-kaan.jpg"
               alt="Photo of Tom"
-              class="photo-about-me img-fluid"
+              class="photo-about-me img-fluid mb-3"
             />
           </div>
-          <div class="col-8">
+          <div class="col-md-8">
             <h2>About me</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
@@ -107,7 +107,7 @@
             </p>
             <br />
             <h2>Contact information</h2>
-            <div class="d-flex justify-content-between">
+            <div class="d-md-flex justify-content-between">
               <p>
                 Tom van Lint
                 <br />
@@ -122,7 +122,7 @@
                 <br />
                 E-mail: tomvanlint@live.nl
               </p>
-              <div>
+              <div class="mt-3 mt-md-0">
                 <a href="mailto:tomvanlint@live.nl" class="button btn"
                   >Contact me</a
                 >
@@ -139,13 +139,14 @@
       </div>
     </section>
 
+    <!--Resume section-->
     <section id="resume">
-      <div class="container work">
+      <div class="container work text-center text-md-left">
         <div class="row">
-          <div class="col-4">
+          <div class="col-md-4">
             <h2><span class="topic">Work</span></h2>
           </div>
-          <div class="col-8">
+          <div class="col-md-8">
             <h2>Title</h2>
             <h3 class="font-italic">Second title • 00/00/0000</h3>
             <p>
@@ -173,12 +174,12 @@
         </div>
       </div>
 
-      <div class="container education">
+      <div class="container education text-center text-md-left">
         <div class="row">
-          <div class="col-4">
+          <div class="col-md-4">
             <h2><span class="topic">Education</span></h2>
           </div>
-          <div class="col-8">
+          <div class="col-md-8">
             <h2>Title</h2>
             <h3 class="font-italic">Second title • 00/00/0000</h3>
             <p>
@@ -206,12 +207,12 @@
         </div>
       </div>
 
-      <div class="container skills">
+      <div class="container skills text-center text-md-left">
         <div class="row">
-          <div class="col-4">
+          <div class="col-md-4">
             <h2><span class="topic">Skills</span></h2>
           </div>
-          <div class="col-4">
+          <div class="col-md-4">
             <div class="d-flex justify-content-between skill">
               <p>HTML</p>
               <p>7/10</p>
@@ -220,25 +221,178 @@
               class="progress skill"
               role="progressbar"
               aria-label="Example with label"
-              aria-valuenow="25"
+              aria-valuenow="70"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div class="progress-bar" style="width: 70%"></div>
+            </div>
+
+            <div class="d-flex justify-content-between skill">
+              <p>HTML</p>
+              <p>7/10</p>
+            </div>
+            <div
+              class="progress skill"
+              role="progressbar"
+              aria-label="Example with label"
+              aria-valuenow="70"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div class="progress-bar" style="width: 70%"></div>
+            </div>
+
+            <div class="d-flex justify-content-between skill">
+              <p>HTML</p>
+              <p>7/10</p>
+            </div>
+            <div
+              class="progress skill"
+              role="progressbar"
+              aria-label="Example with label"
+              aria-valuenow="70"
               aria-valuemin="0"
               aria-valuemax="100"
             >
               <div class="progress-bar" style="width: 70%"></div>
             </div>
           </div>
-          <div class="col-4">
-            <p class="skill">CSS</p>
+          <div class="col-md-4">
+            <div class="d-flex justify-content-between skill">
+              <p>CSS</p>
+              <p>7/10</p>
+            </div>
             <div
               class="progress skill"
               role="progressbar"
               aria-label="Example with label"
-              aria-valuenow="25"
+              aria-valuenow="70"
               aria-valuemin="0"
               aria-valuemax="100"
             >
-              <div class="progress-bar" style="width: 25%">25%</div>
+              <div class="progress-bar" style="width: 70%"></div>
             </div>
+
+            <div class="d-flex justify-content-between skill">
+              <p>CSS</p>
+              <p>7/10</p>
+            </div>
+            <div
+              class="progress skill"
+              role="progressbar"
+              aria-label="Example with label"
+              aria-valuenow="70"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div class="progress-bar" style="width: 70%"></div>
+            </div>
+
+            <div class="d-flex justify-content-between skill">
+              <p>CSS</p>
+              <p>7/10</p>
+            </div>
+            <div
+              class="progress skill"
+              role="progressbar"
+              aria-label="Example with label"
+              aria-valuenow="70"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div class="progress-bar" style="width: 70%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Projects section-->
+    <section id="projects">
+      <div class="container projects text-center text-md-left">
+        <h2><span class="topic">Projects</span></h2>
+        <br />
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <a
+              href="https://kickboxing-landingpage-tom-pelican.netlify.app/"
+              target="_blank"
+            >
+              <div class="card">
+                <img
+                  src="/images/kickboxing-landing-page.JPG"
+                  class="card-img-top image"
+                  alt="Kickboxing Landing Page"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Kickboxing Landing Page</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a
+                    href="https://github.com/tom-pelican/kickboxing-landing-page"
+                    target="_blank"
+                    class="button btn"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4 mb-4">
+            <a
+              href="https://weather-app-tom-pelican.netlify.app/"
+              target="_blank"
+            >
+              <div class="card">
+                <img
+                  src="/images/weather-app.JPG"
+                  class="card-img-top image"
+                  alt="Weather App"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Weather App</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a
+                    href="https://github.com/tom-pelican/weather-app"
+                    target="_blank"
+                    class="button btn"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4 mb-4">
+            <a
+              href="https://worldclock-app-tom-pelican.netlify.app/"
+              target="_blank"
+            >
+              <div class="card">
+                <img
+                  src="/images/world-clock.JPG"
+                  class="card-img-top image"
+                  alt="Portfolio Website"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">World Clock</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a
+                    href="https://github.com/tom-pelican/world-clock"
+                    class="button btn"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+            </a>
           </div>
         </div>
       </div>

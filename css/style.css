@@ -1,17 +1,19 @@
 :root {
-  --primary-color: rgb(245, 109, 97);
+  /*--primary-color: rgb(245, 109, 97);*/
+  --primary-color: rgb(247, 199, 5);
   --secondary-color: rgb(43, 43, 43);
   --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  --box-shadow-hover: rgba(247, 199, 5, 0.24) 0px 3px 8px;
 }
 
 body {
-  padding-top: 62px;
+  padding-top: 74px;
   margin: 0 auto;
   max-width: 100%;
 }
 
 header {
-  padding: 200px;
+  padding: 0px;
   text-align: center;
   background-image: url(/images/tom-kaan.jpg);
   background-repeat: no-repeat;
@@ -59,19 +61,20 @@ p {
 }
 
 footer {
-  border-top: 0.5px solid rgba(0, 0, 0, 0.2);
   text-align: center;
   padding: 10px;
-  margin-top: 60px;
-  bottom: 0;
+}
+
+a {
+  color: black;
 }
 
 a:hover {
   text-decoration: none;
+  color: var(--primary-color);
 }
 
 /*Logo*/
-
 .logo {
   display: inline-block;
   vertical-align: top;
@@ -81,7 +84,7 @@ a:hover {
 .logo-brackets {
   font-family: "Lato", sans-serif;
   font-size: 48px;
-  color: #f7c705;
+  color: var(--primary-color);
 }
 
 .logo-text {
@@ -100,7 +103,6 @@ a:hover {
 }
 
 /*Rest of Navbar*/
-
 .navbar-custom {
   background: white;
   box-shadow: var(--box-shadow);
@@ -125,10 +127,15 @@ a:hover {
   clip-path: circle(50%);
 }
 
+.home {
+  padding: 100px;
+}
+
 .about-me,
 .work,
 .education,
-.skills {
+.skills,
+.projects {
   padding: 50px 0;
   border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
 }
@@ -190,7 +197,7 @@ a:hover {
 }
 
 .card:hover {
-  box-shadow: rgba(245, 109, 97, 0.24) 0px 3px 8px;
+  box-shadow: var(--box-shadow-hover);
 }
 
 .image {
@@ -207,18 +214,20 @@ a:hover {
   cursor: pointer;
 }
 
-.fa-circle {
-  color: var(--secondary-color);
-}
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
 
-.dot {
-  height: 15px;
-  width: 15px;
-  background-color: black;
-  border-radius: 50%;
-  display: inline-block;
-}
+  .home {
+    padding: 20px;
+  }
 
-.line {
-  border-left: 2px solid rgba(0, 0, 0, 0.2);
+  .about-me,
+  .work,
+  .education,
+  .skills,
+  .projects {
+    max-width: 90%;
+  }
 }
