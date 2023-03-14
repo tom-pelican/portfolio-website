@@ -11,6 +11,10 @@
       rel="stylesheet"
     />
     <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Lato:wght@300&family=PT+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap"
       rel="stylesheet"
     />
@@ -26,7 +30,15 @@
   <body>
     <!--Navbar-->
     <nav class="navbar fixed-top navbar-expand-lg navbar-custom navbar-light">
-      <a class="navbar-brand" href="/index.html">Tom van Lint</a>
+      <a class="navbar-brand" href="/index.html">
+        <div class="logo d-flex">
+          <div class="logo-brackets">{}</div>
+          <div class="logo-text">
+            <div class="logo-name">TOM VAN LINT</div>
+            <div class="logo-slogan">CREATIVE DEVELOPER</div>
+          </div>
+        </div>
+      </a>
       <button
         class="navbar-toggler"
         type="button"
@@ -95,21 +107,33 @@
             </p>
             <br />
             <h2>Contact information</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-              Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
-              sem. Nulla consequat massa quis enim. Donec pede justo, fringilla
-              vel, aliquet nec, vulputate eget, arcu. Nullam dictum felis eu
-              pede mollis pretium.
-            </p>
-            <a href="mailto:tomvanlint@live.nl" class="button btn"
-              >Contact me</a
-            >
-            <a href="/documents/Resume.png" target="_blank" class="button btn"
-              >Resume</a
-            >
+            <div class="d-flex justify-content-between">
+              <p>
+                Tom van Lint
+                <br />
+                Karl Weisbardstraat 169
+                <br />
+                3015GM Rotterdam
+                <br />
+                The Netherlands
+                <br />
+                <br />
+                Phone: +31 (0)6 14974419
+                <br />
+                E-mail: tomvanlint@live.nl
+              </p>
+              <div>
+                <a href="mailto:tomvanlint@live.nl" class="button btn"
+                  >Contact me</a
+                >
+                <a
+                  href="/documents/Resume.png"
+                  target="_blank"
+                  class="button btn"
+                  >Resume</a
+                >
+              </div>
+            </div>
           </div>
         </div>
       </div>

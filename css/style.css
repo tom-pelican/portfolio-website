@@ -5,6 +5,7 @@
 }
 
 body {
+  padding-top: 62px;
   margin: 0 auto;
   max-width: 100%;
 }
@@ -69,6 +70,37 @@ a:hover {
   text-decoration: none;
 }
 
+/*Logo*/
+
+.logo {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 1;
+}
+
+.logo-brackets {
+  font-family: "Lato", sans-serif;
+  font-size: 48px;
+  color: #f7c705;
+}
+
+.logo-text {
+  text-align: center;
+}
+
+.logo-name {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 28px;
+  line-height: 28px;
+}
+
+.logo-slogan {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+}
+
+/*Rest of Navbar*/
+
 .navbar-custom {
   background: white;
   box-shadow: var(--box-shadow);
@@ -78,13 +110,6 @@ a:hover {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 300;
-}
-
-.navbar-custom .navbar-brand {
-  font-size: 24px;
-  font-weight: 700px;
-  font-weight: bold;
-  letter-spacing: -1px;
 }
 
 .navbar-custom .navbar-toggler {
